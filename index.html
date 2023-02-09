@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/index.js"></script>
+    <title>CalculadoraWeb</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="display">
+            <div class="superior">
+                <input class="result superior-text" id="superior" type="text" autocomplete="off" readonly>
+                <input type="text" class="simbol" autocomplete="off" readonly id="operacion">
+            </div>
+            <input class="result inferior" id="primero" type="text" autocomplete="off"  readonly>
+        </div>
+        <div class="principal" id="principal"> 
+            <input type="button" value="C" class="botones symbol" id="limpiar" onclick="limpiar()">
+            <input type="button" value="+/-" class="botones symbol" id="simbolos">
+            <input type="button" value="%" class="botones symbol" id="simbolos">
+            <input type="button" value="/" class="botones symbol" id="simbolos">
+            <input type="button" value="7" class="botones number" id="numero">
+            <input type="button" value="8" class="botones number" id="numero">
+            <input type="button" value="9" class="botones number" id="numero">
+            <input type="button" value="X" class="botones symbol" id="simbolos">
+            <input type="button" value="4" class="botones number" id="numero">
+            <input type="button" value="5" class="botones number" id="numero">
+            <input type="button" value="6" class="botones number" id="numero">
+            <input type="button" value="-" class="botones symbol" id="simbolos">
+            <input type="button" value="1" class="botones number" id="numero">
+            <input type="button" value="2" class="botones number" id="numero">
+            <input type="button" value="3" class="botones number" id="numero">
+            <input type="button" value="+" class="botones symbol" id="simbolos">
+            <input type="button" value="." class="botones symbol" id="numero">
+            <input type="button" value="0" class="botones number" id="numero">
+            <input type="button" value="DEL" class="botones symbol" onclick="reducir()">
+            <input type="button" value="=" class="botones symbol" onclick="resultado()">
+        </div>
+    </div>
+</body>
+</html>
